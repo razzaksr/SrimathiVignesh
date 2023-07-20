@@ -5,13 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multimedia</title>
     <style>
+        .audvid{
+            display: flex;
+            justify-content: space-around;
+            /*align-items: center;*/
+        }
+        .audvid audio{
+            align-self: center;
+        }
+        .kalpanas{
+            margin-top: 50px;
+            display: flex;
+            flex: row;
+            justify-content: space-evenly;
+        }
+        .kalpanas img{
+            padding: 1px;
+            height: 200px;
+            width: min-content;
+        }
+        #ig1{
+            flex:6;
+        }
+        #ig2{
+            flex:6;
+        }
+        #ig3{
+            flex:2;
+        }
         .kalpana{
-            text-align: center;
+            display: flex;
+            justify-content: space-around;
         }
         h1{
             background-image: url(myfiles/fire3.jpg);
         }
-        img{
+        .kalpana img{
             width: 100px;
             /*height: 100vh;*/
             height: 100px;
@@ -31,12 +60,23 @@
     <div class="kalpana">
         <img src="myfiles/fire1.jpg" alt="free fire"/>
         <img src="myfiles/fire3.jpg" alt="free fire"/>
+        <img src="myfiles/fire3.jpg" alt="free fire"/>
+    </div>
+    <div class="kalpanas">
+        <img id="ig1" src="myfiles/fire1.jpg" alt="free fire"/>
+        <img id="ig2" src="myfiles/fire3.jpg" alt="free fire"/>
+        <img id="ig3" src="myfiles/fire3.jpg" alt="free fire"/>
     </div>
     <h2>Nature of Peru</h2>
     <hr color="red"/>
-    <video controls autoplay muted width="100%" height="500px">
-        <source src="myfiles/Peru.mp4"/>
-    </video>
+    <div class="audvid">
+        <video controls autoplay muted>
+            <source src="myfiles/Peru.mp4"/>
+        </video>
+        <audio controls >
+            <source src="myfiles/Valimai BGM.mp3"/>
+        </audio>
+    </div>
     <h2>Valimai Background Score</h2>
     <hr color="red"/>
     <audio controls >
