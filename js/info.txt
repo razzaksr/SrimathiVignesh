@@ -55,3 +55,10 @@ BuiltIn:
 	.
 	.
 	.
+
+Input:
+	form components: DOM
+	prompt("question","")
+
+	alpha=input("djfbvjkbfkv")
+	
