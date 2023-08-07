@@ -6,7 +6,7 @@
     <title>DoM | Events</title>
     <script>
         function findIt(){
-            // dom
+            // dom on form components
             //const salary=document.getElementById("num1").id;
             const salary=document.getElementById("num1").value
             //console.log(salary+" "+typeof(salary));
@@ -38,7 +38,7 @@
                 tax=0;
                 alert(salary+" person no need to pay tax")
             }
-            var payable=(ctc*tax);
+            var payable=(ctc*tax);//var payable=(ctc*tax)/100;
             //alert(payable+"k is tax value");
             document.getElementById("result").value=payable+"k is tax value";
         }

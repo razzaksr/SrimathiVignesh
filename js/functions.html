@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <script>
+        let currentUser=""
+        function allow(){
+            currentUser=prompt("Enter the username ","")
+            alert(currentUser)
+        }
+        function passing(userName){
+            currentUser=userName
+            alert(currentUser)
+        }
+        function perform(alpha,beta,comso){
+            alpha>beta&&alpha>comso?
+            document.getElementById("text").innerText=alpha+" greater":
+            beta>comso?document.getElementById("text").innerText=beta+" greater":
+            document.getElementById("text").innerText=comso+" greater"
+        }
+        function receiveBack(){
+            var hi=document.getElementById("shade")
+            hi.style.backgroundColor=hi.value
+            hi.style.boxShadow="20px 20px 20px red"
+            hi.style.fontSize="40px"
+            //var hiVal=document.getElementById("shade").value
+            //var hiStyle=document.getElementById("shade").style
+            //hiStyle.backgroundColor=hiVal
+        }
+    </script>
+</head>
+<body>
+    <p id="text">Result is</p>
+    <button onclick="allow()">Basic</button>
+    <button onclick="passing('Vignesh')">Argument</button>
+    <button onclick="perform(56,91,23)">Bigger</button>
+    <input type="text" id="shade" onchange="receiveBack()"/>
+</body>
+</html>

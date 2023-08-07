@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM HTML</title>
+    <script>
+        function alpha(){
+            //alert("entered")
+            var text=document.getElementsByTagName("p")[0].innerText
+            alert(text)
+            document.getElementsByTagName("p")[1].innerText="Zealous Tech Corp"
+        }
+        function on(){
+            var alpha=document.getElementById("listing")
+            alpha.style.backgroundColor='blue'
+            alpha.style.color='white'
+            // background-color
+        }
+        function off(){
+            var alpha=document.getElementById("listing")
+            alpha.style.backgroundColor='white'
+            alpha.style.color='blue'
+        }
+
+    </script>
+</head>
+<body>
+    <p onmouseenter="alpha()">Hello there!!!!!!!!</p>
+    <ul id="listing" onclick="on()" ondblclick="off()">
+       <li>DJango</li> 
+       <li>Flask</li> 
+       <li>Jinja</li> 
+    </ul>
+    <p>Hai there!!!!!!!!</p>
+</body>
+</html>
